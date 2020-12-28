@@ -62,6 +62,9 @@ $imSettings['databases'] = array();
 $ecommerce = Configuration::getCart();
 // Setup the coupon data
 $couponData = array();
+$couponData['cart'] = array(
+	'DESCUENTONUEVOCLIENTE10' => array('type' => 'relative', 'amount' => 0.1, 'apply_on_shipping_and_payment' => FALSE, 'start_time' => 1609194781, 'end_time' => 1612045981)
+);
 $couponData['products'] = array();
 // Setup the cart
 $ecommerce->setPublicFolder('');
@@ -81,7 +84,7 @@ $ecommerce->setSettings(array(
 	'cell_text_color' => 'rgba(0, 0, 0, 1)',
 	'availability_reduction_type' => 1,
 	'border_color' => 'rgba(211, 211, 211, 1)',
-	'owner_email' => '',
+	'owner_email' => 'bonitamiamoda@gmail.com',
 	'vat_type' => 'included'
 ));
 
