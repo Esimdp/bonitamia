@@ -82,6 +82,15 @@
 		'imageFile' : 'style/page-to-top.png'
 	});
 
+	if (s.imAdv.show) {
+		s.imSplashBox.id = 'splashbox-advcorner';
+		s.imSplashBox.position = 'center';
+		s.imSplashBox.effect = 'animated swing';
+		s.imSplashBox.cookie = false;
+		s.imSplashBox.link = function () { x5engine.utils.location('index.html', null, false); };
+		s.imSplashBox.shadow = false;
+		s.imSplashBox.media = { "type": "image", "url": x5engine.settings.currentPath + "images/Sorteo.jpg", "width": 1080, "height": 1080 };
+	}
 	// Captcha
 	b.push(function () {
 		x5engine.captcha.instance = new x5engine.captcha.x5captcha({
