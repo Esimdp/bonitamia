@@ -85,7 +85,7 @@ $ecommerce->setSettings(array(
 	'availability_reduction_type' => 1,
 	'border_color' => 'rgba(211, 211, 211, 1)',
 	'owner_email' => 'bonitamiamoda@gmail.com',
-	'vat_type' => 'included'
+	'vat_type' => 'none'
 ));
 
 $ecommerce->setDigitalProductsData(array());

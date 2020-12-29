@@ -9,7 +9,9 @@ if(substr(basename($_SERVER['PHP_SELF']), 0, 11) == "imEmailForm") {
 	if(@$_POST['action'] != 'check_answer') {
 		if(!isset($_POST['imJsCheck']) || $_POST['imJsCheck'] != 'D433170D9874F88DA7637F84C8D20BA8' || (isset($_POST['imSpProt']) && $_POST['imSpProt'] != ""))
 			die(imPrintJsError());
-		$form->mailToOwner($_POST['imObjectForm_19_2'] != "" ? $_POST['imObjectForm_19_2'] : 'bonitamiamoda@gmail.com', 'bonitamiamoda@gmail.com', 'consulta web', 'Gracias por enviarnos tu consulta, a la brevedad nos estaremos comunicando contigo.', false);
+		$form->mailToOwner($_POST['imObjectForm_19_2'] != "" ? $_POST['imObjectForm_19_2'] : 'bonitamiamoda@gmail.com', 'bonitamiamoda@gmail.com', 'Consulta Web', 'Gracias por enviarnos tu consulta, a la brevedad nos estaremos comunicando contigo.', false);
+		$form->mailToCustomer('bonitamiamoda@gmail.com', $_POST['imObjectForm_19_2'], 'Consulta recibida', 'Su consulta fue recibida con exito, a la brevedad nos comunicaremos con Ud
+muchas gracias', false);
 		@header('Location: ../index.html');
 		exit();
 	} else {
