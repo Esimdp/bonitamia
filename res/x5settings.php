@@ -7,8 +7,8 @@
 */
 
 $imSettings['general'] = array(
-	'url' => 'http://esimdp.gibhub.io/bonitamia/',
-	'homepage_url' => 'http://esimdp.gibhub.io/bonitamia/index.html',
+	'url' => 'http://esimdp.github.io/bonitamia/',
+	'homepage_url' => 'http://esimdp.github.io/bonitamia/index.html',
 	'icon' => '',
 	'version' => '17.1.2.0',
 	'sitename' => 'bonitamia',
@@ -43,6 +43,7 @@ $imSettings['password_policy'] = array(
 
 
 $imSettings['admin'] = array(
+	'icon' => 'admin/images/logo.jpg',
 	'notification_public_key' => '25d61e2058b5358e',
 	'notification_private_key' => '79a0fbbefe89fe65',
 	'enable_manager_notifications' => false,
